@@ -128,7 +128,7 @@
 			<key>ResetHwSig</key>
 			<false/>
 			<key>ResetLogoStatus</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -232,7 +232,7 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,ig-platform-id </key>
+				<key>AAPL,ig-platform-id</key>
 				<data>AAASWQ==</data>
 			</dict>
 		</dict>
@@ -605,7 +605,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -613,7 +613,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -634,6 +634,8 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
@@ -714,6 +716,8 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CustomOS</string>
 				<key>Path</key>
@@ -728,6 +732,8 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>AllowToggleSip</key>
+			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -760,6 +766,8 @@
 				<string>BootKicker.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>BootKicker.efi</string>
 				<key>TextMode</key>
@@ -778,6 +786,8 @@
 				<string>ChipTune.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>ChipTune.efi</string>
 				<key>TextMode</key>
@@ -796,6 +806,8 @@
 				<string>CleanNvram.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CleanNvram.efi</string>
 				<key>TextMode</key>
@@ -814,6 +826,8 @@
 				<string>ControlMsrE2.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>ControlMsrE2.efi</string>
 				<key>TextMode</key>
@@ -824,6 +838,26 @@
 				<string></string>
 				<key>Path</key>
 				<string>ControlMsrE2.efi</string>
+				<key>Auxiliary</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>CsrUtil.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>CsrUtil.efi</string>
+				<key>TextMode</key>
+				<false/>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+				<key>Path</key>
+				<string>CsrUtil.efi</string>
 				<key>Auxiliary</key>
 				<true/>
 			</dict>
@@ -832,6 +866,8 @@
 				<string>GopStop.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>GopStop.efi</string>
 				<key>TextMode</key>
@@ -850,6 +886,8 @@
 				<string>KeyTester.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>KeyTester.efi</string>
 				<key>TextMode</key>
@@ -868,6 +906,8 @@
 				<string>MmapDump.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>MmapDump.efi</string>
 				<key>TextMode</key>
@@ -886,6 +926,8 @@
 				<string>OpenControl.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>OpenControl.efi</string>
 				<key>TextMode</key>
@@ -904,6 +946,8 @@
 				<string>OpenShell.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>OpenShell.efi</string>
 				<key>TextMode</key>
@@ -922,6 +966,8 @@
 				<string>ResetSystem.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>ResetSystem.efi</string>
 				<key>TextMode</key>
@@ -940,6 +986,8 @@
 				<string>RtcRw.efi</string>
 				<key>RealPath</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>RtcRw.efi</string>
 				<key>TextMode</key>
@@ -983,6 +1031,8 @@
 				<data></data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -999,6 +1049,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -1044,12 +1095,12 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
+			<key>AdviseFeatures</key>
 			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02015102GUH69FJA</string>
+			<string>C02913300GUH69FAD</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1061,9 +1112,9 @@
 			<key>SystemProductName</key>
 			<string>iMac18,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CKWYVH7JY</string>
+			<string>C02YHYZVH7JY</string>
 			<key>SystemUUID</key>
-			<string>89924BF0-99DE-4EDE-A6FF-7D29BF9C619E</string>
+			<string>08C0CAED-CB32-46A7-AA73-0B9DED2B70EF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1166,7 +1217,7 @@
 			<key>ForceResolution</key>
 			<false/>
 			<key>GopPassThrough</key>
-			<false/>
+			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
@@ -1191,6 +1242,8 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
+			<false/>
+			<key>AppleEg2Info</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
